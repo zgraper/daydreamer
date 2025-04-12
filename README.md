@@ -38,34 +38,36 @@
 ```bash
 git clone https://github.com/your-username/daydreamer-ai.git
 cd daydreamer-ai
+```
 
 2. Install Requirements
-
+```
 pip install -r requirements.txt
+```
 
     ✅ Make sure you also have FAISS and sentence-transformers installed.
 
 3. Add Your Book
 
-Place your compiled book into a text file named:
-
+Place your compiled book or inspiration file into a text file named:
+```
 book_compilation.txt
-
+```
 4. Create the Index
 
 Run this to generate your local vector database:
-
+```
 python index_creator.py
-
+```
 5. Generate a Daydream
-
+```
 python daydreamer.py
-
+```
 You'll be asked to enter a theme (e.g., time travel, quantum language, AI spirituality), and then the dreaming begins.
 🔐 HuggingFace API
 
 You’ll need an API key for HuggingFace’s Inference API. Set it in daydreamer.py:
-
+```
 HF_API_TOKEN = "your_token_here"
-
+```
 You can get one by signing up at: https://huggingface.co/settings/tokens
